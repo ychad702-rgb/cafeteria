@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Aroma - Página de Inicio</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <span> Lun - Vie: 9:00 - 19:00 / Cerrado los fines de semana</span>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header 
+    
+    class="navbar" id="mainNavbar">
+        <div class="container">
+            <div class="logo">
+                <span class="icon">☕</span> DULCE ENCUENTRO.
+            </div>
+            
+            <nav class="nav-links">
+                <a href="#" class="active">Inicio</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Menu</a>
+                <a href="#">Servicios</a>
+                <a href="#">Paginas</a>
+                <a href="#">Blog</a>
+                <a href="#">Contacto</a>
+            </nav>
+            <a href="#" class="btn btn-book" onclick="openModal()">RESERVA MESA</a>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content container">
+            <p class="subtitle">BIENVENIDO AL CAFE DULCE AROMA</p>
+            <h1>El día comienza después de una taza de café DULCE AROMA</h1>
+            <p class="description">Descubre nuestro acogedor ambiente y la selección de granos más finos. Un lugar perfecto para empezar el día o tomar un descanso en la tarde.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-book-hero" onclick="openModal()">RESERVA MESA</a>
+   
+    <a href="tienda.html" class="btn btn-visit-shop">VISITA NUESTRA TIENDA</a>
+
+    </div>
+        </div>
+    </section>
+    
+    <div id="reservationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h2>Reserva tu Mesa</h2>
+            <form id="reservationForm">
+                <label for="name">Nombre Completo:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="time">Hora:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="guests">Número de Personas:</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+
+                <button type="submit" class="btn btn-submit">CONFIRMAR RESERVA</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
